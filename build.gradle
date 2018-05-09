@@ -1,0 +1,30 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    jcenter()
+    maven { url "https://jitpack.io" }
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:2.2.0'
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'
+    classpath 'com.github.JakeWharton:sdk-manager-plugin:0ce4cdf08009d79223850a59959d9d6e774d0f77'
+  }
+}
+
+subprojects {
+  repositories {
+    mavenCentral()
+    maven { url "http://appboy.github.io/appboy-android-sdk/sdk" }
+  }
+
+  group = 'com.appboy'
+  version = '1.16.0'
+
+  apply plugin: 'android-sdk-manager'
+}
+
+// Run 'gradle wrapper' to generate all of the wrapper files if you change this.
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.14.1'
+}
