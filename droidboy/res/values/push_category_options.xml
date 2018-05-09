@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="push_category_options">
+    <item>Category: Not Set</item>
+    <item>Category: Invalid Category</item>
+    <item>Category: Alarm</item>
+    <item>Category: Progress</item>
+    <item>Category: Social</item>
+    <item>Category: Error</item>
+    <item>Category: Transport</item>
+    <item>Category: System</item>
+    <item>Category: Service</item>
+    <item>Category: Recommendation</item>
+    <item>Category: Status</item>
+  </string-array>
+  <string-array name="push_category_values">
+    <item></item>
+    <item>bad_category</item>
+    <item>alarm</item>
+    <item>progress</item>
+    <item>social</item>
+    <item>err</item>
+    <item>transport</item>
+    <item>sys</item>
+    <item>service</item>
+    <item>recommendation</item>
+    <item>status</item>
+  </string-array>
+</resources>

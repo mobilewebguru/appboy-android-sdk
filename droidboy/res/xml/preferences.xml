@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/custom_logging_category_title">
+        <com.appboy.sample.UserProfileDialog
+            android:title="@string/user_dialog_title"
+            android:positiveButtonText="@string/user_dialog_okay"
+            android:negativeButtonText="@string/user_dialog_cancel"/>
+        <com.appboy.sample.logging.CustomUserAttributeDialog
+            android:title="@string/log_user_attributes_title"
+            android:positiveButtonText="@string/user_dialog_okay"
+            android:negativeButtonText="@string/user_dialog_cancel"/>
+        <com.appboy.sample.logging.CustomPurchaseDialog
+            android:title="@string/log_purchase_title"
+            android:positiveButtonText="@string/user_dialog_okay"
+            android:negativeButtonText="@string/user_dialog_cancel"/>
+        <com.appboy.sample.logging.CustomEventDialog
+            android:title="@string/log_events_title"
+            android:positiveButtonText="@string/user_dialog_okay"
+            android:negativeButtonText="@string/user_dialog_cancel"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/network_control_title">
+        <Preference
+            android:key="request_inappmessage"
+            android:title="Request In-App Message"/>
+        <Preference
+            android:key="data_flush"
+            android:title="@string/data_flush_title" />
+        <Preference
+            android:key="enable_outbound_network_requests"
+            android:title="Re-Enable Outbound Network Requests" />
+        <Preference
+            android:key="disable_outbound_network_requests"
+            android:title="Disable Outbound Network Requests" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/push_preference_category">
+        <com.appboy.sample.subscriptions.PushSubscriptionStateDialog
+            android:title="@string/set_push_subscription_state_title"
+            android:summary="@string/set_push_subscription_state_summary"
+            android:positiveButtonText="@string/user_dialog_okay"
+            android:negativeButtonText="@string/user_dialog_cancel"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/feed">
+        <CheckBoxPreference
+            android:key="sort_feed"
+            android:title="@string/sort_feed"
+            android:summary="@string/sort_feed_summary"
+            android:defaultValue="false"/>
+        <CheckBoxPreference
+            android:key="set_custom_news_feed_card_click_action_listener"
+            android:title="@string/custom_news_feed_card_click_action_listener"
+            android:summary="@string/custom_news_feed_card_click_action_listener_summary"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/misc_preference_category">
+        <Preference
+            android:key="external_storage_runtime_permission_dialog"
+            android:title="External Storage Permission Dialog"
+            android:summary="Request Runtime Permission"/>
+        <Preference
+            android:key="toggle_disable_appboy_network_requests_for_filtered_emulators"
+            android:title="@string/disable_appboy_network_requests"
+            android:summary="@string/disable_appboy_network_requests_summary"/>
+        <Preference
+            android:key="log_attribution"
+            android:title="@string/log_attribution_title"
+            android:summary="@string/log_attribution_summary"/>
+        <com.appboy.sample.subscriptions.EmailSubscriptionStateDialog
+            android:title="@string/set_email_subscription_state_title"
+            android:summary="@string/set_email_subscription_state_summary"
+            android:positiveButtonText="@string/user_dialog_okay"
+            android:negativeButtonText="@string/user_dialog_cancel"/>
+        <com.appboy.sample.LogLevelDialogPreference
+            android:title="@string/log_level_dialog_title"
+            android:summary="@string/log_level_pref_summary"
+            android:positiveButtonText="@string/user_dialog_done"
+            android:negativeButtonText=""/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/storage_info_preference_category">
+        <com.appboy.sample.FileDataDialog
+            android:title="@string/file_data_title"
+            android:summary="@string/file_data_summary"/>
+        <com.appboy.sample.SharedPreferencesDataDialog
+            android:title="@string/shared_preferences_title"
+            android:summary="@string/shared_preferences_summary"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/session_title">
+        <Preference
+            android:key="open_session"
+            android:title="Open Session"/>
+        <Preference
+            android:key="close_session"
+            android:title="Close Session"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/location_title">
+        <Preference
+            android:key="set_manual_location"
+            android:title="Set Manual Location"
+            android:summary="Override current location"/>
+        <Preference
+            android:key="location_runtime_permission_dialog"
+            android:title="Location Permission Dialog"
+            android:summary="Request Runtime Permission"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/about_title">
+        <Preference
+            android:key="sdk_version"
+            android:title="SDK Version"/>
+        <Preference
+            android:key="api_key"
+            android:title="API Key"/>
+        <Preference
+            android:key="push_token"
+            android:title="Push Token"/>
+    </PreferenceCategory>
+</PreferenceScreen>

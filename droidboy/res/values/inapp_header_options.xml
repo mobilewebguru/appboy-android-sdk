@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="inapp_header_options">
+    <item>Header: Not Set</item>
+    <item>Header: None</item>
+    <item>Header: 10 Chars</item>
+    <item>Header: 20 Chars</item>
+    <item>Header: 30 Chars</item>
+    <item>Header: 80 Chars</item>
+  </string-array>
+  <string-array name="inapp_header_values">
+      <item>@string/not_set</item>
+      <item>@string/none</item>
+      <item>@string/header_10</item>
+      <item>@string/header_20</item>
+      <item>@string/header_30</item>
+      <item>@string/header_80</item>
+  </string-array>
+</resources>

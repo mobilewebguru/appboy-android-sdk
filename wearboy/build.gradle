@@ -1,0 +1,20 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 24
+  buildToolsVersion '24.0.0'
+
+  defaultConfig {
+    minSdkVersion 21
+    targetSdkVersion 24
+  }
+
+  productFlavors {
+    Wear {
+    }
+  }
+}
+
+dependencies {
+  compile project(':wear-library')
+}
